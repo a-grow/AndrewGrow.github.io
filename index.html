@@ -4,94 +4,115 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Andrew Grow | Data Operations & Web Solutions</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <style>
         body { 
-            background: linear-gradient(to bottom, #000000, #123b7c); 
+            background: linear-gradient(135deg, #000000 0%, #1a2a6c 50%, #b21f1f 100%);
+            background-attachment: fixed;
             color: white; 
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             min-height: 100vh;
         }
-        .hero { padding: 80px 0 40px 0; text-align: center; }
-        h1 { color: #4db8ff; font-weight: bold; }
-        .tagline { color: #cccccc; max-width: 700px; margin: 0 auto; }
+        .hero { padding: 100px 0 60px 0; }
+        h1 { color: #ffffff; font-weight: 800; letter-spacing: -1px; }
+        .accent-color { color: #4db8ff; }
+        
         .box { 
-            background-color: rgba(255, 255, 255, 0.1); 
-            padding: 30px; 
-            border-radius: 15px; 
-            text-align: center; 
-            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 35px; 
+            border-radius: 20px; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             height: 100%;
             border: 1px solid rgba(255,255,255,0.1);
         }
         .box:hover { 
-            background-color: rgba(255, 255, 255, 0.2); 
-            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-10px);
             border-color: #4db8ff;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
         }
         .box a { 
             color: #4db8ff; 
             text-decoration: none; 
-            font-size: 1.4em; 
-            font-weight: bold; 
+            font-size: 1.3em; 
+            font-weight: 700; 
             display: block; 
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
-        .box p { color: #bbbbbb; font-size: 0.95em; }
         .service-footer { 
-            background-color: rgba(0,0,0,0.3); 
-            margin-top: 50px; 
-            padding: 40px; 
-            border-radius: 20px;
-            border: 1px dashed #4db8ff;
+            background: rgba(255, 255, 255, 0.03);
+            margin-top: 80px; 
+            padding: 50px; 
+            border-radius: 30px;
+            border: 1px solid rgba(77, 184, 255, 0.3);
+        }
+        .btn-contact {
+            background-color: #4db8ff;
+            color: #000;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 12px 35px;
+            transition: all 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body>
+<body class="animate__animated animate__fadeIn">
 
-    <header class="hero container">
-        <h1>Andrew Grow</h1>
-        <p class="tagline lead">Data Visualization, Analysis & Reporting | Power BI, Tableau, SQL, & Excel for Clear Insights</p>
+    <header class="hero container text-center">
+        <h1 class="display-3">Andrew <span class="accent-color">Grow</span></h1>
+        <p class="lead opacity-75 mx-auto mt-3" style="max-width: 800px;">
+            Data Operations Specialist & Web Architect. <br>
+            <span class="small text-uppercase tracking-widest">Power BI • Tableau • SQL • Excel • GitHub Web Solutions</span>
+        </p>
     </header>
 
     <main class="container">
-        <div class="row g-4">
-            <div class="col-md-6">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
                 <div class="box">
                      <a href="https://github.com/a-grow/Power-BI-Projects" target="_blank">Power BI Analytics</a>
-                    <p>Advanced data modeling and business intelligence. View interactive dashboards and .pbix files.</p>
+                    <p class="small text-white-50">Transforming raw data into visual intelligence. Specialized in complex modeling and executive reporting.</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-5">
                 <div class="box">
-                    <a href="https://public.tableau.com/app/profile/andy.grow/vizzes" target="_blank">Tableau Visuals</a>
-                    <p>High-impact storytelling through interactive data visualizations and vizzes.</p>
+                    <a href="https://public.tableau.com/app/profile/andy.grow/vizzes" target="_blank">Tableau Dashboards</a>
+                    <p class="small text-white-50">Dynamic storytelling through interactive data vizzes designed for clarity and impact.</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-5">
                 <div class="box">
                     <a href="https://github.com/a-grow/Excel-Projects" target="_blank">Excel Operations</a>
-                    <p>Professional data cleanup, complex formulas, and automated spreadsheet reporting.</p>
+                    <p class="small text-white-50">Advanced automation, professional data cleanup, and scalable spreadsheet architecture.</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-5">
                 <div class="box">
-                    <a href="https://github.com/a-grow/SQL-Projects-" target="_blank">SQL Development</a>
-                    <p>Database management, complex queries, and backend data architecture solutions.</p>
+                    <a href="https://github.com/a-grow/SQL-Projects-" target="_blank">Database Engineering</a>
+                    <p class="small text-white-50">Optimized SQL querying and backend data management for reliable business logic.</p>
                 </div>
             </div>
         </div>
 
-        <section class="service-footer text-center">
-            <h3>Custom Web & Dashboard Solutions</h3>
-            <p>Need a secure, modern, and high-speed website for your business?</p>
-            <p class="small text-info">I specialize in data-driven portals and professional web presence hosted on GitHub Pages.</p>
-            <p class="mt-3"><strong>Currently accepting new projects.</strong></p>
+        <section class="service-footer text-center animate__animated animate__fadeInUp animate__delay-1s">
+            <h2 class="fw-bold mb-3">Custom Web Solutions</h2>
+            <p class="mb-4 opacity-75">I build secure, high-performance web portals designed for data tracking and professional presence.</p>
+            <a href="mailto:YOUR_EMAIL@GMAIL.COM" class="btn btn-contact">Start a Project</a>
+            <div class="mt-4 small text-info">Hosted Securely on GitHub Pages</div>
         </section>
     </main>
 
-    <footer class="text-center py-5 text-muted">
-        <p>&copy; 2026 Andrew Grow | Built with Modern Web Standards</p>
+    <footer class="text-center py-5 opacity-50">
+        <p class="small">&copy; 2026 Andrew Grow | Secure Digital Operations</p>
     </footer>
 
 </body>
